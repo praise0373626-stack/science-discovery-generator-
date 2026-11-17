@@ -6,26 +6,38 @@ body {
   padding: 40px 20px;
 }
 
-main {
-  max-width: 650px;
+.container {
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-section {
+.card {
   background: white;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 24px;
   margin-top: 24px;
-  box-shadow: 0 4px 16px #00000014;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 button {
   background: #2563eb;
   color: white;
-  border: 0;
-  border-radius: 8px;
-  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
   font-size: 1rem;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
 }
