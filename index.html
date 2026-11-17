@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science Discovery Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Curiosity hub</p>
+      <h1>Science Discovery Generator</h1>
+      <p class="subtitle">
+        Search science topics, learn something surprising, and test your knowledge.
+      </p>
+    </header>
+
+    <section class="controls">
+      <label class="search-label" for="searchInput">Search for a topic</label>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Try: space, plants, light, chemistry..."
+      />
+
+      <div id="categoryButtons" class="category-buttons" aria-label="Science categories"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <p class="label">Topic</p>
+        <button id="generateBtn" class="primary-btn">Generate a discovery</button>
+      </div>
+
+      <h2 id="topicName">Ready to explore?</h2>
+
+      <div class="info-block">
+        <p class="label">Fact</p>
+        <p id="factText">Press the button to discover something new.</p>
+      </div>
+
+      <div class="info-block">
+        <p class="label">Why it matters</p>
+        <p id="importanceText"></p>
+      </div>
+
+      <div class="info-block">
+        <p class="label">Experiment idea</p>
+        <p id="experimentText"></p>
+      </div>
+
+      <a id="learnMoreLink" href="#" target="_blank" rel="noopener noreferrer">
+        Learn more
+      </a>
+    </section>
+
+    <section class="quiz-card">
+      <h3>Quick quiz</h3>
+      <p id="quizQuestion">Question will appear here.</p>
+      <div id="quizOptions" class="quiz-options"></div>
+      <p id="quizFeedback" class="quiz-feedback"></p>
+
+      <button id="nextQuestionBtn" class="secondary-btn">Next question</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
